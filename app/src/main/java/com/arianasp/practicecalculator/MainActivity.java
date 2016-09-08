@@ -76,7 +76,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         + Float.parseFloat(String.valueOf(et_2.getText()));
                 tv_1.setText(String.valueOf(sum));
                 */
-
+        switch (v.getId()){
+            case R.id.btn_0:
+                et_1.getText().insert(et_1.getSelectionStart(),et_1.getText());
+        }
 
     }
 }
