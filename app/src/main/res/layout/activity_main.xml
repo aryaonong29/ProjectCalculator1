@@ -22,30 +22,19 @@
 
             <com.rey.material.widget.EditText
                 android:id="@+id/et_1"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:hint="@string/income"
-                android:textAlignment="center">
+                style="@style/EditText1">
             </com.rey.material.widget.EditText>
 
             <com.rey.material.widget.EditText
                 android:id="@+id/et_2"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:hint="@string/outcome"
-                android:textAlignment="center">
+                style="@style/EditText2">
             </com.rey.material.widget.EditText>
 
             <com.rey.material.widget.TextView
                 android:id="@+id/tv_1"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:hint="@string/balance"
-                android:textAlignment="center">
+                style="@style/TextView">
             </com.rey.material.widget.TextView>
+
         </LinearLayout>
         <LinearLayout
             android:id="@+id/ll_b"

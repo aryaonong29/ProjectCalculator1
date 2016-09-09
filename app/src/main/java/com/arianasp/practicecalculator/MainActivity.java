@@ -76,10 +76,108 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         + Float.parseFloat(String.valueOf(et_2.getText()));
                 tv_1.setText(String.valueOf(sum));
                 */
-        switch (v.getId()){
+        int cursorPosition = et_1.getSelectionStart();
+        CharSequence enteredText = et_1.getText().toString();
+        CharSequence cursorToEnd = enteredText.subSequence(cursorPosition, enteredText.length());
+        /*switch (v.getId()){
             case R.id.btn_0:
-                et_1.getText().insert(et_1.getSelectionStart(),et_1.getText());
-        }
+                if(){
+                    et_1.getText().insert(et_1.getSelectionEnd(),"0");
+                }
+                else{
+                    et_2.getText().insert(et_2.getSelectionEnd(),"0");
+                }
+            break;
+            case R.id.btn_1:
+                if(){
+                    et_1.getText().insert(et_1.getSelectionEnd(),"1");
+                }
+                else{
+                    et_2.getText().insert(et_2.getSelectionEnd(),"1");
+                }
+                break;
+            case R.id.btn_2:
+                if(){
+                    et_1.getText().insert(et_1.getSelectionEnd(),"2");
+                }
+                else{
+                    et_2.getText().insert(et_2.getSelectionEnd(),"2");
+                }
+                break;
+            case R.id.btn_3:
+                if(){
+                    et_1.getText().insert(et_1.getSelectionEnd(),"3");
+                }
+                else{
+                    et_2.getText().insert(et_2.getSelectionEnd(),"3");
+                }
+                break;
+            case R.id.btn_4:
+                if(){
+                    et_1.getText().insert(et_1.getSelectionEnd(),"4");
+                }
+                else{
+                    et_2.getText().insert(et_2.getSelectionEnd(),"4");
+                }
+                break;
+            case R.id.btn_5:
+                if(){
+                    et_1.getText().insert(et_1.getSelectionEnd(),"5");
+                }
+                else{
+                    et_2.getText().insert(et_2.getSelectionEnd(),"5");
+                }
+                break;
+            case R.id.btn_6:
+                if(){
+                    et_1.getText().insert(et_1.getSelectionEnd(),"6");
+                }
+                else{
+                    et_2.getText().insert(et_2.getSelectionEnd(),"6");
+                }
+                break;
+            case R.id.btn_7:
+                if(){
+                    et_1.getText().insert(et_1.getSelectionEnd(),"7");
+                }
+                else{
+                    et_2.getText().insert(et_2.getSelectionEnd(),"7");
+                }
+                break;
+            case R.id.btn_8:
+                if(){
+                    et_1.getText().insert(et_1.getSelectionEnd(),"8");
+                }
+                else{
+                    et_2.getText().insert(et_2.getSelectionEnd(),"8");
+                }
+                break;
+            case R.id.btn_9:
+                if(){
+                    et_1.getText().insert(et_1.getSelectionEnd(),"9");
+                }
+                else{
+                    et_2.getText().insert(et_2.getSelectionEnd(),"9");
+                }
+                break;
+            case R.id.btn_clear:
+                if(){
+                    et_1.getText().insert(et_1.getSelectionEnd(),"");
+                }
+                else{
+                    et_2.getText().insert(et_2.getSelectionEnd(),"");
+                }
+                break;
+            case R.id.btn_back:
+                if(){
+                    et_1.getText().insert(et_1.getSelectionEnd(),"-1");
+                }
+                else{
+                    et_2.getText().insert(et_2.getSelectionEnd(),"-1");
+                }
+                break;
+
+        }*/
 
     }
 }
