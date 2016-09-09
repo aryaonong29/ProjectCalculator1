@@ -1,51 +1,62 @@
 package com.arianasp.practicecalculator;
 
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextUtils;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
+import android.support.v7.app.ActionBarActivity;
 
-import com.rey.material.widget.Button;
-import com.rey.material.widget.EditText;
-import com.rey.material.widget.FloatingActionButton;
-import com.rey.material.widget.TextView;
+import static com.arianasp.practicecalculator.R.drawable.*;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    EditText et_1,et_2;
+    android.widget.EditText et_1, et_2;
 
-    TextView tv_1;
+    android.widget.TextView tv_1;
 
-    Button btn_1,btn_2,btn_3,btn_4,btn_5,btn_6,btn_7,btn_8,btn_9,btn_0,btn_clear,btn_back;
+    android.widget.Button btn_1, btn_2, btn_3, btn_4, btn_5, btn_6, btn_7, btn_8, btn_9, btn_0, btn_clear, btn_back;
 
     android.support.design.widget.FloatingActionButton fab;
     float sum;
+    /**
+     * ATTENTION: This was auto-generated to implement the App Indexing API.
+     * See https://g.co/AppIndexing/AndroidStudio for more information.
+     */
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar);
+        getSupportActionBar().setIcon(R.drawable.ic_toolbar);
+
+
         //untuk disable keyboard dari smartphone pada aplikasi
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_ALT_FOCUSABLE_IM,
                 WindowManager.LayoutParams.FLAG_ALT_FOCUSABLE_IM);
         //cari element berdasarkan id
-        et_1 = (EditText)findViewById(R.id.et_1);
-        et_2 = (EditText)findViewById(R.id.et_2);
+        et_1 = (android.widget.EditText) findViewById(R.id.et_1);
+        et_2 = (android.widget.EditText) findViewById(R.id.et_2);
 
-        tv_1 = (TextView)findViewById(R.id.tv_1);
+        tv_1 = (android.widget.TextView) findViewById(R.id.tv_1);
 
-        btn_0 = (Button) findViewById(R.id.btn_0);
-        btn_1 = (Button) findViewById(R.id.btn_1);
-        btn_2 = (Button) findViewById(R.id.btn_2);
-        btn_3 = (Button) findViewById(R.id.btn_3);
-        btn_4 = (Button) findViewById(R.id.btn_4);
-        btn_5 = (Button) findViewById(R.id.btn_5);
-        btn_6 = (Button) findViewById(R.id.btn_6);
-        btn_7 = (Button) findViewById(R.id.btn_7);
-        btn_8 = (Button) findViewById(R.id.btn_8);
-        btn_9 = (Button) findViewById(R.id.btn_9);
-        btn_back = (Button) findViewById(R.id.btn_back);
-        btn_clear = (Button) findViewById(R.id.btn_clear);
+        btn_0 = (android.widget.Button) findViewById(R.id.btn_0);
+        btn_1 = (android.widget.Button) findViewById(R.id.btn_1);
+        btn_2 = (android.widget.Button) findViewById(R.id.btn_2);
+        btn_3 = (android.widget.Button) findViewById(R.id.btn_3);
+        btn_4 = (android.widget.Button) findViewById(R.id.btn_4);
+        btn_5 = (android.widget.Button) findViewById(R.id.btn_5);
+        btn_6 = (android.widget.Button) findViewById(R.id.btn_6);
+        btn_7 = (android.widget.Button) findViewById(R.id.btn_7);
+        btn_8 = (android.widget.Button) findViewById(R.id.btn_8);
+        btn_9 = (android.widget.Button) findViewById(R.id.btn_9);
+        btn_back = (android.widget.Button) findViewById(R.id.btn_back);
+        btn_clear = (android.widget.Button) findViewById(R.id.btn_clear);
         fab = (android.support.design.widget.FloatingActionButton) findViewById(R.id.fab);
 
         btn_1.setOnClickListener(this);
@@ -61,12 +72,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_clear.setOnClickListener(this);
         btn_back.setOnClickListener(this);
         fab.setOnClickListener(this);
+
     }
 
     @Override
     public void onClick(View v) {
-        Editable num1 = et_1.getText();
-        Editable num2 = et_2.getText();
+        //Editable num1 = et_1.getText();
+        //Editable num2 = et_2.getText();
 
         /*if (TextUtils.isEmpty(et_1.getText().toString())
                 || TextUtils.isEmpty(et_2.getText().toString())) {
@@ -76,9 +88,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         + Float.parseFloat(String.valueOf(et_2.getText()));
                 tv_1.setText(String.valueOf(sum));
                 */
-        int cursorPosition = et_1.getSelectionStart();
-        CharSequence enteredText = et_1.getText().toString();
-        CharSequence cursorToEnd = enteredText.subSequence(cursorPosition, enteredText.length());
+        //int cursorPosition = et_1.getSelectionStart();
+        //CharSequence enteredText = et_1.getText().toString();
+        //CharSequence cursorToEnd = enteredText.subSequence(cursorPosition, enteredText.length());
         /*switch (v.getId()){
             case R.id.btn_0:
                 if(){
@@ -180,4 +192,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }*/
 
     }
+
 }
