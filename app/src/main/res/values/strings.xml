@@ -14,7 +14,7 @@
     <string name="eight">8</string>
     <string name="nine">9</string>
     <string name="my_tb_title">This is my toolbar</string>
-    <string name="my_tb_sub">This is my subtitle</string>
-    </resources>
+    <string name="my_tb_subtitle">This is my subtitle</string>
+</resources>
 
 

@@ -4,10 +4,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+    <TextView
+        android:id="@+id/tv_tb"
+        style="@style/TextViewToolbar"/>
+
     <ImageView
         android:id="@+id/iv"
-        android:src="@drawable/iv_1"
-        style="@style/ImageView"/>
+        style="@style/ImageView"
+        android:src="@drawable/iv_1"/>
 
     <LinearLayout android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -25,20 +36,14 @@
             android:orientation="vertical">
 
             <EditText
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:id="@+id/etNum1"
-                android:layout_width="match_parent"
-                android:hint="@string/income">
-            </EditText>
+                style="@style/EditTextLand1"
+                />
+
 
             <EditText
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:id="@+id/etNum2"
-                android:layout_width="match_parent"
-                android:hint="@string/outcome">
-            </EditText>
+                style="@style/EditTextLand2"/>
 
             <TextView
                 android:layout_height="wrap_content"

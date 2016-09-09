@@ -18,8 +18,7 @@
     <ImageView
         android:id="@+id/iv"
         style="@style/ImageView"
-
-        />
+        android:src="@drawable/iv_1"/>
 
     <LinearLayout android:layout_width="match_parent"
         android:layout_height="match_parent"
